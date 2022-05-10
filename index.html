@@ -36,17 +36,7 @@
     <h1 id="header"></h1>
     <div id="plot"></div>
     <py-script>pyscript.write("header", "Pyscript Demo")</py-script>
-    <py-script output="plot">
-import matplotlib.pyplot as plt
-from data import generate_x_and_y
-
-x, y = generate_x_and_y(1000)
-fig, ax = plt.subplots()
-
-ax.scatter(x, y)
-fig
-        
-    </py-script>
+    <py-script src="/pythonfile.py" output="plot"></py-script>
 </body>
 
 </html>
